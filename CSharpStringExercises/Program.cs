@@ -39,7 +39,7 @@ namespace CSharpStringExercises
 
 			Console.WriteLine("Q6:");
 			int numAnagrams = StringExercises.Anagram("star", ["rats", "arts", "arc"]);
-			Console.WriteLine($"[rats, arts, arc] contains {numAnagrams} of star\n");
+			Console.WriteLine($"[rats, arts, arc] contains {numAnagrams} anagrams of star\n");
 
 			Console.WriteLine("Q7");
 			string input = "Happy Monday";
@@ -49,8 +49,8 @@ namespace CSharpStringExercises
 			Console.WriteLine($"{input} => {snakeCase} {camelCase} {pascalCase}\n");
 
 			Console.WriteLine("Q8:");
-			Console.WriteLine(StringExercises.PigLatin("&,%%!"));
-            Console.WriteLine(StringExercises.PigLatin("I don't like Mondays much.") + "\n");
+			Console.WriteLine($"&,%%! => {StringExercises.PigLatin("&,%%!")}");
+            Console.WriteLine($"I don't like Mondays much.\" => {StringExercises.PigLatin("I don't like Mondays much.")}\n");
 
 			Console.WriteLine("Q9:");
 			int keyPresses = StringExercises.CalculateKeyPresses(["War", "and", "Peace"]);
